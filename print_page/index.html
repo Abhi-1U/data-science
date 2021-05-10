@@ -4385,10 +4385,59 @@ Residuals   30 1467.2   48.91
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">R</label><div class="tabbed-content">
 <h1 id="genviva-clustering-based">Clustering Based</h1>
-<details class="question"><summary>What is clustering?</summary></details>
-<details class="question"><summary>What is a cluster ?</summary></details>
-<details class="question"><summary>Which algorithm is used in clustering?</summary></details>
-<details class="question"><summary>Use of K means?</summary></details>
+<details class="question"><summary>What is clustering?</summary><p>Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. In simple words, the aim is to segregate groups with similar traits and assign them into clusters.</p>
+</details>
+<details class="question"><summary>What are the types of clustering ?</summary><p>Broadly speaking, clustering can be divided into two subgroups : <br />
+<strong>Hard Clustering:</strong> In hard clustering, each data point either belongs to a cluster completely or not. For example, in the above example each customer is put into one group out of the 10 groups.<br />
+<strong>Soft Clustering:</strong> In soft clustering, instead of putting each data point into a separate cluster, a probability or likelihood of that data point to be in those clusters is assigned. For example, from the above scenario each costumer is assigned a probability to be in either of 10 clusters of the retail store.</p>
+</details>
+<details class="question"><summary>Types of clustering algorithms ?</summary><table>
+<thead>
+<tr>
+<th>Model Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connectivity Based Models:</td>
+<td>Similar data will be closer in values or connections, hence can be clustered.(Eg. Hierarchical clustering )</td>
+</tr>
+<tr>
+<td>Centroid Based Models:</td>
+<td>Clusters are made based on the closeness of the data point to the centroid of the clusters.(K means is centroid based).</td>
+</tr>
+<tr>
+<td>Distribution Based Models:</td>
+<td>Clusters are formed from the probability values from the distribution of data.(Eg. Expectation Minimization algorithm)</td>
+</tr>
+<tr>
+<td>Density Based Models:</td>
+<td>These models look for high density zones in data sets and create a cluster of such zones(Eg. DBSCAN and OPTICS)</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="question"><summary>What is a cluster ?</summary><p>A cluster is a group of points which share some kind of similarity among each other,eg. A cluster of CS students and IT students can be formed on the basis of their course selection.</p>
+</details>
+<details class="question"><summary>Which algorithm is used in clustering?</summary><p>In our practicals we use k means algorithm, but there are many others like DBSCAN,Hierarchical,etc..</p>
+</details>
+<details class="question"><summary>How does K-Means algorithm work ?</summary><p>K means is an iterative clustering algorithm that aims to find local maxima in each iteration. This algorithm works in these 5 steps :<br />
+1. Specify the desired number of clusters K .<br />
+2. Randomly assign each data point to a cluster.<br />
+3. Compute cluster centroids.  <br />
+4. Re-assign each point to the closest cluster centroid.<br />
+5. Re-compute cluster centroids    </p>
+</details>
+<details class="question"><summary>Use of K means or any other clustering algorithm ?</summary><p>Clustering has a large no. of applications spread across various domains. Some of the most popular applications of clustering are:<br />
+1. Recommendation engines<br />
+2. Market segmentation<br />
+3. Social network analysis<br />
+4. Search result grouping<br />
+5. Medical imaging<br />
+6. Image segmentation<br />
+7. Anomaly detection  </p>
+</details>
 <h1 id="genviva-time-series-based">Time Series Based</h1>
 <details class="question"><summary>What is time-series forecasting</summary></details>
 <details class="question"><summary>Which model have we used in time series forecasting ?</summary></details>
