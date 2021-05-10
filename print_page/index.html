@@ -4340,7 +4340,7 @@ Residuals   30 1467.2   48.91
 </details></section><h1 class='nav-section-title-end'>Practicals</h1><h1 class='nav-section-title'>Viva</h1><section class="print-page" id="genviva"><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">MongoDB</label><div class="tabbed-content">
 <details class="question"><summary>What is MongoDB?</summary><p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).</p>
 </details>
-<details class="question"><summary>Difference between NoSQL and SQL or (MongoDB vs MySQL) or (DBMS vs RDBMS?</summary><table>
+<details class="question"><summary>Difference between NoSQL and SQL or (MongoDB vs MySQL) or (DBMS vs RDBMS)?</summary><table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -4439,27 +4439,93 @@ Residuals   30 1467.2   48.91
 7. Anomaly detection  </p>
 </details>
 <h1 id="genviva-time-series-based">Time Series Based</h1>
-<details class="question"><summary>What is time-series forecasting</summary></details>
-<details class="question"><summary>Which model have we used in time series forecasting ?</summary></details>
+<details class="question"><summary>What is time-series forecasting</summary><p>As the name suggests, TS is a collection of data points collected at constant time intervals.</p>
+</details>
+<details class="question"><summary>What makes time-series forecasting special ?</summary><p>There are 2 things:<br />
+It is time dependent. So the basic assumption of a linear regression model that the observations are independent doesn’t hold in this case.<br />
+Along with an increasing or decreasing trend, most TS have some form of seasonality trends, i.e. variations specific to a particular time frame. For example, if you see the sales of a woolen jacket over time, you will invariably find higher sales in winter seasons.</p>
+</details>
+<details class="question"><summary>Which model have we used in time series forecasting ?</summary><p>ARIMA stands for Auto-Regressive Integrated Moving Averages. The ARIMA forecasting for a stationary time series is nothing but a linear (like a linear regression) equation. The predictors depend on the parameters (p,d,q) of the ARIMA model:<br />
+1. Number of AR (Auto-Regressive) terms (p): AR terms are just lags of dependent variable.<br />
+2. Number of MA (Moving Average) terms (q): MA terms are lagged forecast errors in prediction equation.<br />
+3. Number of Differences (d): These are the number of nonseasonal differences, i.e. in this case we took the first order difference.</p>
+</details>
 <h1 id="genviva-regression-based">Regression Based</h1>
-<details class="question"><summary>What is Linear Regression ?</summary></details>
-<details class="question"><summary>What is Multiple Regression ?</summary></details>
+<details class="question"><summary>What is Linear Regression ?</summary><p>Linear regression is a basic and commonly used type of predictive analysis.  The overall idea of regression is to examine two things: <br />
+(1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable?  <br />
+(2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable?</p>
+</details>
+<details class="question"><summary>What is Multiple Regression ?</summary><p>Multiple linear regression (MLR), also known simply as multiple regression, is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. The goal of multiple linear regression (MLR) is to model the linear relationship between the explanatory (independent) variables and response (dependent) variable.</p>
+</details>
 <h1 id="genviva-decision-tree-based">Decision Tree Based</h1>
-<details class="question"><summary>What is decision tree?</summary></details>
-<details class="question"><summary>How to plot a decision tree ?</summary></details>
+<details class="question"><summary>What is decision tree?</summary><p>In decision tree we are checking the decision process of a person to do something where we consider various factors such as income levels,the location where he lives, etc. One of the best problems which is solved by decision tree is restaurant waiting problem.</p>
+</details>
+<details class="question"><summary>How to plot a decision tree ?</summary><p>One can plot a decision tree using rpart and rpart.plot package which come with functions to plot the decision tree.</p>
+</details>
 <h1 id="genviva-hypothesis-testing-based">Hypothesis Testing Based</h1>
-<details class="question"><summary>What is Hypothesis Testing ?</summary></details>
-<details class="question"><summary>How can you conclude that the Null or Alt hypothesis is true or not ?</summary></details>
+<details class="question"><summary>What is Hypothesis Testing ?</summary><p>Hypothesis testing in statistics is a way for you to test the results of a survey or experiment to see if you have meaningful results. You’re basically testing whether your results are valid by figuring out the odds that your results have happened by chance. If your results may have happened by chance, the experiment won’t be repeatable and so has little use.   </p>
+</details>
+<details class="question"><summary>How can you conclude that the Null or Alt hypothesis is true or not  ?</summary><p>Depending on the P-value,Z-score (which we did not use we used students t-test), we can find if the statistical analysis yields the result within the level of significance. If the P value lands in the level of significance then we can surely say our null hypothesis is true, else our alternate hypothesis is true.   </p>
+</details>
 <h1 id="genviva-anova-based">ANOVA Based</h1>
-<details class="question"><summary>What is ANOVA?</summary></details>
-<details class="question"><summary>Which are the types of ANOVA ?</summary></details>
+<details class="question"><summary>What is ANOVA?</summary><p>Analysis of variance (ANOVA) is a collection of statistical models and their associated estimation procedures (such as the "variation" among and between groups) used to analyze the differences among means.</p>
+</details>
+<details class="question"><summary>Which are the types of ANOVA ?</summary><p>There are two main types: one-way and two-way. Two-way tests can be with or without replication.<br />
+1. <strong>One-way ANOVA between groups:</strong> used when you want to test two groups to see if there’s a difference between them.
+2. <strong>Two way ANOVA without replication:</strong> used when you have one group and you’re double-testing that same group. For example, you’re testing one set of individuals before and after they take a medication to see if it works or not.<br />
+3. <strong>Two way ANOVA with replication:</strong> Two groups, and the members of those groups are doing more than one thing. For example, two groups of patients from different hospitals trying two different therapies.</p>
+</details>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Others</label><div class="tabbed-content">
-<details class="question"><summary>Which Analytical tools are used?</summary></details>
-<details class="question"><summary>Why do we use R studio ?</summary></details>
-<details class="question"><summary>What is regression line?</summary></details>
-<details class="question"><summary>What is acf()?</summary></details>
-<details class="question"><summary>What dataset have we used in this practical ?</summary></details>
+<details class="question"><summary>Why do we use R studio ?</summary><p>R-Studio provides a better GUI layout than traditional R. It also has many more features such as variable tracking, plot window for managing plots, file management tab, R-markdown based document creation tool and so on.</p>
+</details>
+<details class="question"><summary>What is regression line?</summary><p>Regression line is a line which gives the slope of the data graph.</p>
+</details>
+<details class="question"><summary>What is acf()?</summary><p>auto correlation function : Autocorrelation is the correlation of a variable with itself at differing time lags.</p>
+</details>
+<details class="question"><summary>What dataset have we used in this practical ?</summary><table>
+<thead>
+<tr>
+<th>Practical</th>
+<th>DataSet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time-Series</td>
+<td>AirPassengers(Built in)</td>
+</tr>
+<tr>
+<td>Clustering</td>
+<td>iris(Built in)</td>
+</tr>
+<tr>
+<td>Linear Regression</td>
+<td>Lungcapdata.csv</td>
+</tr>
+<tr>
+<td>Decision Tree</td>
+<td>fitnessapplog.csv</td>
+</tr>
+<tr>
+<td>Hypothesis Testing</td>
+<td>manual data in variable</td>
+</tr>
+<tr>
+<td>ANOVA-Ftest</td>
+<td>ftest data set with time_g1,time_g2(time from 2 generators)</td>
+</tr>
+<tr>
+<td>ANOVA-1WAY</td>
+<td>employee data with satindex and dept data</td>
+</tr>
+<tr>
+<td>ANOVA-2WAY</td>
+<td>employee data with satindex, experience and department data</td>
+</tr>
+</tbody>
+</table>
+</details>
 </div>
 </div></section><h1 class='nav-section-title-end'>Viva</h1><h1 class='nav-section-title'>Notes</h1><section class="print-page" id="data"><h1 id="data-what-is-data">What is data ?</h1>
 <p>Data are a set of values of qualitative or quantitative variables about one or more persons or objects, while a datum (singular of data) is a single value of a single variable.</p></section><section class="print-page" id="languages"><h1 id="languages-best-programming-languages-for-data-science">Best Programming Languages for Data Science</h1>
