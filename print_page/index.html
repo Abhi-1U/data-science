@@ -2630,7 +2630,7 @@ Available components:
 </tr>
 </tbody>
 </table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">lungcapdata</span><span class="o">&lt;-</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&#39;LungCapData.csv&#39;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">lungcapdata</span><span class="o">&lt;-</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&#39;https://raw.githubusercontent.com/Abhi-1U/data-science/master/Attachments/LungCapData.csv&#39;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -2643,8 +2643,8 @@ Available components:
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">attach()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attach">attach()</a></td>
+<td>The database is attached to the R search path. This means that the database is searched by R when evaluating a variable, so objects in the database can be accessed by simply giving their names.</td>
 </tr>
 </tbody>
 </table>
@@ -2746,7 +2746,7 @@ Available components:
 </code></pre></div>
 </td></tr></table>
 
-<details class="note"><summary>Output</summary><p><img alt="png" src="../../img/P5/output_7_0.png" /></p>
+<details class="note"><summary>Output</summary><p><img alt="png" src="../img/P5/output_7_0.png" /></p>
 </details>
 <table>
 <thead>
@@ -2757,8 +2757,8 @@ Available components:
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">cor()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor">cor()</a></td>
+<td>compute the variance of x and the correlation of x and y if these are vectors. If x and y are matrices then the covariances (or correlations) between the columns of x and the columns of y are computed.</td>
 </tr>
 </tbody>
 </table>
@@ -2777,17 +2777,29 @@ Available components:
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">lm()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm">lm()</a></td>
+<td>lm is used to fit linear models. It can be used to carry out regression, single stratum analysis of variance and analysis of covariance (although aov may provide a more convenient interface for these).</td>
 </tr>
 </tbody>
 </table>
-<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">mod</span><span class="o">&lt;-</span><span class="nf">lm</span><span class="p">(</span><span class="n">LungCap</span><span class="o">~</span><span class="n">Age</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">mod</span><span class="o">&lt;-</span><span class="nf">lm</span><span class="p">(</span><span class="n">LungCap</span><span class="o">~</span><span class="n">Age</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-|command/paramater|details|
-|---|---| 
-|<a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary">summary()</a>|summary is a generic function used to produce result summaries of the results of various model fitting functions. The function invokes particular methods which depend on the class of the first argument.|</p>
+
+<table>
+<thead>
+<tr>
+<th>command/paramater</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/summary">summary()</a></td>
+<td>summary is a generic function used to produce result summaries of the results of various model fitting functions. The function invokes particular methods which depend on the class of the first argument.</td>
+</tr>
+</tbody>
+</table>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nf">summary</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
@@ -2838,8 +2850,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">attributes()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attributes">attributes()</a></td>
+<td>These functions access an object's attributes. The first form below returns the object's attribute list. The replacement forms uses the list on the right-hand side of the assignment as the object's attributes (if appropriate).</td>
 </tr>
 </tbody>
 </table>
@@ -2865,7 +2877,7 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 <tbody>
 <tr>
 <td>mod$coefficients</td>
-<td></td>
+<td>gets the coefficients property of the mod variable.</td>
 </tr>
 </tbody>
 </table>
@@ -2900,16 +2912,16 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 <td>name of the plot</td>
 </tr>
 <tr>
-<td><a  href="#index">abline()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/abline">abline()</a></td>
+<td>This function adds one or more straight lines through the current plot.</td>
 </tr>
 <tr>
 <td>col=</td>
-<td></td>
+<td>A specification for the default plotting color. See section ‘Color Specification’.</td>
 </tr>
 <tr>
 <td>lwd=</td>
-<td></td>
+<td>The line width, a positive number, defaulting to 1</td>
 </tr>
 </tbody>
 </table>
@@ -2919,7 +2931,7 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </code></pre></div>
 </td></tr></table>
 
-<details class="note"><summary>Output</summary><p><img alt="png" src="../../img/P5/output_13_0.png" /></p>
+<details class="note"><summary>Output</summary><p><img alt="png" src="../img/P5/output_13_0.png" /></p>
 </details>
 <table>
 <thead>
@@ -2930,8 +2942,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">confint()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/psychmeta/versions/2.5.1/topics/confint">confint()</a></td>
+<td>Confidence interval method for objects of classes deriving from "lm_mat." Returns lower and upper bounds of confidence intervals for regression coefficients.</td>
 </tr>
 </tbody>
 </table>
@@ -2959,12 +2971,12 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">confint()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/psychmeta/versions/2.5.1/topics/confint">confint()</a></td>
+<td>Confidence interval method for objects of classes deriving from "lm_mat." Returns lower and upper bounds of confidence intervals for regression coefficients.</td>
 </tr>
 <tr>
 <td>level=</td>
-<td></td>
+<td>Confidence level</td>
 </tr>
 </tbody>
 </table>
@@ -3047,8 +3059,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">anova()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/anova">anova()</a></td>
+<td>Compute analysis of variance (or deviance) tables for one or more fitted model objects.</td>
 </tr>
 </tbody>
 </table>
@@ -3100,8 +3112,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">attach()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/attach">attach()</a></td>
+<td>The database is attached to the R search path. This means that the database is searched by R when evaluating a variable, so objects in the database can be accessed by simply giving their names.</td>
 </tr>
 </tbody>
 </table>
@@ -3187,8 +3199,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">levels()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/levels">levels()</a></td>
+<td>levels provides access to the levels attribute of a variable</td>
 </tr>
 </tbody>
 </table>
@@ -3207,8 +3219,8 @@ F-statistic:  1480 on 1 and 723 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">lm()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm">lm()</a></td>
+<td>lm is used to fit linear models. It can be used to carry out regression, single stratum analysis of variance and analysis of covariance (although aov may provide a more convenient interface for these).</td>
 </tr>
 </tbody>
 </table>
@@ -3276,12 +3288,12 @@ F-statistic:  1938 on 2 and 722 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">cor()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor">cor()</a></td>
+<td>compute the variance of x and the correlation of x and y if these are vectors. If x and y are matrices then the covariances (or correlations) between the columns of x and the columns of y are computed.</td>
 </tr>
 <tr>
 <td>method=</td>
-<td></td>
+<td>a character string indicating which correlation coefficient (or covariance) is to be computed. One of "pearson" (default), "kendall", or "spearman": can be abbreviated.</td>
 </tr>
 </tbody>
 </table>
@@ -3300,12 +3312,12 @@ F-statistic:  1938 on 2 and 722 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">confint()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/psychmeta/versions/2.5.1/topics/confint">confint()</a></td>
+<td>Confidence interval method for objects of classes deriving from “lm_mat.” Returns lower and upper bounds of confidence intervals for regression coefficients.</td>
 </tr>
 <tr>
 <td>conf.level=</td>
-<td></td>
+<td>confidence level</td>
 </tr>
 </tbody>
 </table>
@@ -3334,8 +3346,8 @@ F-statistic:  1938 on 2 and 722 DF,  p-value: &lt; 2.2e-16
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">lm()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm">lm()</a></td>
+<td>lm is used to fit linear models. It can be used to carry out regression, single stratum analysis of variance and analysis of covariance (although aov may provide a more convenient interface for these).</td>
 </tr>
 </tbody>
 </table>
@@ -3426,10 +3438,10 @@ F-statistic: 842.8 on 5 and 719 DF,  p-value: &lt; 2.2e-16
 </code></pre></div>
 </td></tr></table>
 
-<details class="note"><summary>Output</summary><p><img alt="png" src="../../img/P5/output_31_0.png" />
-<img alt="png" src="../../img/P5/output_31_1.png" />
-<img alt="png" src="../../img/P5/output_31_2.png" />
-<img alt="png" src="../../img/P5/output_31_3.png" /></p>
+<details class="note"><summary>Output</summary><p><img alt="png" src="../img/P5/output_31_0.png" />
+<img alt="png" src="../img/P5/output_31_1.png" />
+<img alt="png" src="../img/P5/output_31_2.png" />
+<img alt="png" src="../img/P5/output_31_3.png" /></p>
 </details></section><section class="print-page" id="dsp6"><h1 id="dsp6-aim-practical-of-decision-tree">Aim : Practical of Decision Tree</h1>
 <div class="admonition data-set">
 <p class="admonition-title">Data-set</p>
@@ -3925,7 +3937,7 @@ Data Set used in 2-WAY ANOVA :<br />
 </tbody>
 </table>
 </div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">ft</span><span class="o">=</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;ftest.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">ft</span><span class="o">=</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;https://raw.githubusercontent.com/Abhi-1U/data-science/master/Attachments/ftest.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -3940,12 +3952,12 @@ Data Set used in 2-WAY ANOVA :<br />
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">var.test()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/var.test">var.test()</a></td>
+<td>Performs an F test to compare the variances of two samples from normal populations.</td>
 </tr>
 <tr>
 <td>alternative=</td>
-<td></td>
+<td>a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less". You can specify just the initial letter.</td>
 </tr>
 </tbody>
 </table>
@@ -3996,7 +4008,7 @@ ratio of variances
 </tbody>
 </table>
 </div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">data1</span><span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;1anova.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">data1</span><span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;https://raw.githubusercontent.com/Abhi-1U/data-science/master/Attachments/1anova.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -4072,8 +4084,8 @@ ratio of variances
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">head()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/head">head()</a></td>
+<td>Returns the first or last parts of a vector, matrix, table, data frame or function. Since head() and tail() are generic functions, they may also have been extended to other classes.</td>
 </tr>
 </tbody>
 </table>
@@ -4109,16 +4121,16 @@ ratio of variances
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">aov()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/aov">aov()</a></td>
+<td>Fit an analysis of variance model by a call to lm for each stratum.</td>
 </tr>
 <tr>
 <td>formula=</td>
-<td></td>
+<td>A formula specifying the model.</td>
 </tr>
 <tr>
 <td>data=</td>
-<td></td>
+<td>A data frame in which the variables specified in the formula will be found. If missing, the variables are searched for in the standard way.</td>
 </tr>
 </tbody>
 </table>
@@ -4178,7 +4190,7 @@ Residuals   34 1620.9   47.67
 </tbody>
 </table>
 </div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">data2</span><span class="o">&lt;-</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;2anova.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">data2</span><span class="o">&lt;-</span><span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;https://raw.githubusercontent.com/Abhi-1U/data-science/master/Attachments/2anova.csv&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -4254,16 +4266,16 @@ Residuals   34 1620.9   47.67
 </thead>
 <tbody>
 <tr>
-<td><a  href="#index">aov()</a></td>
-<td></td>
+<td><a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/aov">aov()</a></td>
+<td>Fit an analysis of variance model by a call to lm for each stratum.</td>
 </tr>
 <tr>
 <td>formula=</td>
-<td></td>
+<td>A formula specifying the model.</td>
 </tr>
 <tr>
 <td>data=</td>
-<td></td>
+<td>A data frame in which the variables specified in the formula will be found. If missing, the variables are searched for in the standard way.</td>
 </tr>
 </tbody>
 </table>
@@ -4305,7 +4317,10 @@ Residuals   30 1467.2   48.91
 </code></pre></div>
 </td></tr></table>
 
-</details></section><h1 class='nav-section-title-end'>Practicals</h1><h1 class='nav-section-title'>Viva</h1><section class="print-page" id="genviva"><details class="question"><summary>Difference between SQL and NoSQL or (MySQLvs MongoDB) ?</summary><table>
+</details></section><h1 class='nav-section-title-end'>Practicals</h1><h1 class='nav-section-title'>Viva</h1><section class="print-page" id="genviva"><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">MongoDB</label><div class="tabbed-content">
+<details class="question"><summary>What is MongoDB?</summary><p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).</p>
+</details>
+<details class="question"><summary>Difference between NoSQL and SQL or (MongoDB vs MySQL) or (DBMS vs RDBMS?</summary><table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -4346,7 +4361,38 @@ Residuals   30 1467.2   48.91
 </tr>
 </tbody>
 </table>
-</details></section><h1 class='nav-section-title-end'>Viva</h1><h1 class='nav-section-title'>Notes</h1><section class="print-page" id="data"><h1 id="data-what-is-data">What is data ?</h1>
+</details>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">R</label><div class="tabbed-content">
+<h1 id="genviva-clustering-based">Clustering Based</h1>
+<details class="question"><summary>What is clustering?</summary></details>
+<details class="question"><summary>What is a cluster ?</summary></details>
+<details class="question"><summary>Which algorithm is used in clustering?</summary></details>
+<details class="question"><summary>Use of K means?</summary></details>
+<h1 id="genviva-time-series-based">Time Series Based</h1>
+<details class="question"><summary>What is time-series forecasting</summary></details>
+<details class="question"><summary>Which model have we used in time series forecasting ?</summary></details>
+<h1 id="genviva-regression-based">Regression Based</h1>
+<details class="question"><summary>What is Linear Regression ?</summary></details>
+<details class="question"><summary>What is Multiple Regression ?</summary></details>
+<h1 id="genviva-decision-tree-based">Decision Tree Based</h1>
+<details class="question"><summary>What is decision tree?</summary></details>
+<details class="question"><summary>How to plot a decision tree ?</summary></details>
+<h1 id="genviva-hypothesis-testing-based">Hypothesis Testing Based</h1>
+<details class="question"><summary>What is Hypothesis Testing ?</summary></details>
+<details class="question"><summary>How can you conclude that the Null or Alt hypothesis is true or not ?</summary></details>
+<h1 id="genviva-anova-based">ANOVA Based</h1>
+<details class="question"><summary>What is ANOVA?</summary></details>
+<details class="question"><summary>Which are the types of ANOVA ?</summary></details>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Others</label><div class="tabbed-content">
+<details class="question"><summary>Which Analytical tools are used?</summary></details>
+<details class="question"><summary>Why do we use R studio ?</summary></details>
+<details class="question"><summary>What is regression line?</summary></details>
+<details class="question"><summary>What is acf()?</summary></details>
+<details class="question"><summary>What dataset have we used in this practical ?</summary></details>
+</div>
+</div></section><h1 class='nav-section-title-end'>Viva</h1><h1 class='nav-section-title'>Notes</h1><section class="print-page" id="data"><h1 id="data-what-is-data">What is data ?</h1>
 <p>Data are a set of values of qualitative or quantitative variables about one or more persons or objects, while a datum (singular of data) is a single value of a single variable.</p></section><section class="print-page" id="languages"><h1 id="languages-best-programming-languages-for-data-science">Best Programming Languages for Data Science</h1>
 <h2 id="languages-1-python">1. Python</h2>
 <h2 id="languages-2-r">2. R</h2>
